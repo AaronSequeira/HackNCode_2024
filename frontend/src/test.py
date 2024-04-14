@@ -23,7 +23,7 @@ def process_image():
 
     # Validate file extension
     if image.filename == '':
-        return jsonify({'error': 'No selected file'}), 400
+        return jsonify({'error': 'No selected file'} ), 400
     if image and not allowed_file(image.filename):
         return jsonify({'error': 'Unsupported file format'}), 400
 
